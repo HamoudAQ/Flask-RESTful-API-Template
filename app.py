@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,jsonify
 from Model import  db
 
 app = Flask(__name__)
@@ -16,5 +16,5 @@ def index():return "Welcome to to X App"
 def installer():
   db.drop_all()
   db.create_all()
-  return '{"Success":"True","Message":"Application have been initialized successfully do not forget to make this secure or disable it after the installation"}',200
+  return jsonify({"Success":"True","Message":"Application have been initialized successfully do not forget to make this secure or disable it after the installation"})
 
