@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+#Don't forget to change USER , PASSWORD and DATABASENAME
+DEBUG = True
+SECRET_KEY='RANDOM_CHARS_LIKE_THIS_y65t43REV!#)(*&^%'
+SQLALCHEMY_DATABASE_URI='mysql://USER:PASSWORD@localhost/DATABASENAME?charset=utf8'
