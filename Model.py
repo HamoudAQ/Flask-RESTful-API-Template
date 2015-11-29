@@ -4,7 +4,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 #Example of entity (table)
-class User(db.Model):
+class Users(db.Model):
     __tablename__  = 'Users'
     id             = db.Column(db.Integer, primary_key=True)
     Displayed_Name = db.Column(db.String(80,collation='utf8_unicode_ci'),nullable=False)
