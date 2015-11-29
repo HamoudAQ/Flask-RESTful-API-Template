@@ -2,8 +2,8 @@
 
 # Introduction Flask-RESTful-API-Template-
 
-I have created this project to be tamplate for creating RESTful api project based on Flask and its extensions.
-It is expected to make the the beginning of development easier by defining the structure for in addition to implement most used functionality (such as authentication).
+I have created this project to be tamplate for creating RESTful api projects that is based on Flask and its extensions.
+It is expected to make the the beginning of development easier by defining the structure of the project in addition to the basic implementation of the most used functionality (such as authentication).
 
 #Usage
 
