@@ -1,6 +1,6 @@
 from flask.ext.restful import Resource
 from flask import g,jsonify
-from Model import User,db
+from Model import Users,db
 
 from common.Auth import Users
 
