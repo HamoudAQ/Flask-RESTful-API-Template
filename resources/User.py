@@ -2,13 +2,13 @@ from flask.ext.restful import Resource
 from flask import g,jsonify
 from Model import Users,db
 
-from common.Auth import Users
+from common.Auth import Users as Users_login
 
 
 
 
 class RU_User(Resource):#Read and Update
-    decorators = [Users.auth.login_required]
+    decorators = [Users_login.auth.login_required]
     def get(self):#view display_name and phone
         Response = jsonify({"Displayed_Name":g.user.Displayed_Name,"Phone":g.user.Phone})
         Response.status_code=200
