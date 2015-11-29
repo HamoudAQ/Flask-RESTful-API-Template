@@ -2,7 +2,7 @@ from flask.ext.restful import Resource
 from flask import g,jsonify
 from Model import Users,db
 
-from common.Auth import Users as Users_login
+from Common.Auth import Users as Users_login
 
 
 
